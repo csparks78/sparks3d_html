@@ -1,0 +1,56 @@
+.main {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 800px) {
+    .content-area{
+        display: flex;
+        position:absolute;
+       margin-top: 100px;
+       left: 10px;
+    }
+    .sidebar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        min-height: auto;
+    }
+    .logo{
+        left: 15px;
+        top: -10px;
+    }
+    .navigation{
+        display: flex;
+        position: absolute;
+    }
+    .social-icons{
+        display: flex;
+        width: 100%;
+        position: absolute;
+        flex-direction: row;
+        margin: 0;
+        padding: 0; 
+        align-items: center;
+        /* float: right; */
+        text-align: right;
+    }
+    .fa-brands{
+       position:relative;
+       left: 85%;
+       margin: 10px;
+    }
+    .fa-github{
+        margin: 0;
+    }
+    .tags-html{
+        opacity: 0;
+    }
+
+    .tags-body{
+        opacity: 0;
+    }
+}
