@@ -29,8 +29,21 @@
                 <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/cliff-sparks-8231092b/"></a>
                 <a class="fa-brands fa-github" href="https://github.com/csparks78"></a>
             </div>
+            <!-- Top Navigation Menu -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
         </div>
-
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navigation");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+        <!-- End of mobile menu -->
         <div class="tags-html">
             <p id="top">&lt;html&gt;</p>
             <p id="bottom">&lt;/html&gt;</p>
