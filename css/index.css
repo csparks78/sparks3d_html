@@ -259,6 +259,9 @@ button:hover {
 
 /* Hamburger menu */
 @media screen and (max-width:450px) {
+    .tags-html, .tags-body, .header{
+        display: none;
+    }
     /* .sidebar {
         overflow: hidden;
         background-color: #181818;
