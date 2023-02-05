@@ -69,7 +69,8 @@ body {
 
 .content-area .sidebar .social-icons a {
     background-color: #3f3f3f;
-    padding: 3px;
+    padding:5px 5px;
+    
 }
 
 a:visited {
@@ -293,7 +294,9 @@ a:visited {
     .resume-contents {
         grid-template-columns: repeat(1, 1fr);
     }
-
+    .resume-contents .left-section .left-section-contents{
+        margin-top: 50px;
+    }
     .left-section {
         border-radius: 15px 15px 0px 0px;
     }
@@ -341,67 +344,20 @@ a:visited {
 
     .fa-brands {
         position: relative;
-        left: 85%;
+        left: 80%;
         margin: 10px;
     }
 
     .fa-github {
         margin: 0;
     }
-}
-
-@media screen and (max-width:780px) {
 
     .experience-contents,
     .education-contents,
     .awards-contents {
         grid-template-columns: repeat(1, 1fr);
     }
-    /* .sidebar {
-        overflow: hidden;
-        background-color: #181818;
-    }
-
-    .sidebar .navigation {
-        display: none;
-    }
-
-    .sidebar .social-icons {
-        display: none;
-    }
-
-    .sidebar .fa-brands {
-        display: none;
-    }
-
-    .sidebar a {
-        color: rgb(130, 102, 102);
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
     
-    .sidebar a.icon {
-        background: white;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .sidebar a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-
-    .active {
-        background-color: #04AA6D;
-        color: white;
-    } */
-}
-
-@media screen and (max-width:780px) {
     .left-section {
         grid-column: span 3;
     }
@@ -409,11 +365,10 @@ a:visited {
     .right-section {
         grid-column: span 4;
     }
-
 }
 
-
 @media screen and (max-width:450px) {
+  
     .resume-contents {
         width: 100%;
         margin: 0 auto;
@@ -442,7 +397,6 @@ a:visited {
 
     .contact-info ul li i,
     .references ul li i {
-        /* padding-right: 1rem; */
         font-size: 12px;
     }
 
