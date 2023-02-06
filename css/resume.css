@@ -242,7 +242,8 @@ a:visited {
 
 .experience-contents,
 .education-contents,
-.awards-contents {
+.awards-contents,
+.projects-contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 2rem;
@@ -250,7 +251,8 @@ a:visited {
 
 .exp-company-name,
 .education-school-name,
-.awards-company-name {
+.awards-company-name,
+.projects-company-name {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -261,7 +263,8 @@ a:visited {
 
 .exp-time-period,
 .educationp-time-period,
-.awards-time-period {
+.awards-time-period,
+.projects-time-period {
     font-size: 13px;
     letter-spacing: 1px;
     line-height: 2rem;
@@ -269,7 +272,8 @@ a:visited {
 
 .exp-position,
 .education-subject,
-.awards-name {
+.awards-name,
+.projects-name {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -280,12 +284,22 @@ a:visited {
 
 .exp-desc,
 .education-desc,
-.awards-desc {
+.awards-desc,
+.projects-link {
     font-size: 13px;
     letter-spacing: 1px;
     line-height: 1.5rem;
     border-left: 3px solid #a5a3a3;
     padding-left: 5px;
+}
+
+.project-description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-bottom: 4px solid #878CA4;
+    margin-bottom: 20px;
+    letter-spacing: .5px;
+    line-height: 1.5rem;
 }
 
 /* Media queries */
@@ -354,7 +368,8 @@ a:visited {
 
     .experience-contents,
     .education-contents,
-    .awards-contents {
+    .awards-contents,
+    .projects-contents {
         grid-template-columns: repeat(1, 1fr);
     }
     
@@ -411,19 +426,25 @@ a:visited {
 
     .exp-company-name,
     .education-school-name,
-    .awards-company-name {
+    .awards-company-name,
+    .projects-company-name {
         font-size: 18px;
     }
 
     .exp-time-period,
     .educationp-time-period,
-    .awards-time-period {
+    .awards-time-period,
+    .projects-time-period {
         font-size: 16px;
     }
 
     .exp-position,
     .education-subject,
-    .awards-name {
+    .awards-name,
+    .projects-name {
         font-size: 18px;
+    }
+    .project-description{
+        font-size: 14px;
     }
 }
