@@ -1,0 +1,434 @@
+body {
+    background-color: #022c43;
+    /* margin-left: 100px; */
+}
+
+html{
+    margin: 0;
+}
+/* SIDEBAR AREA ------------------------------------*/
+/* -------------------------------------------------*/
+
+.content-area .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #181818;
+    height: 80px;
+}
+
+.nav-wrapper a {
+    color: #454545;
+    /* padding: 14px;    */
+    text-decoration: none;
+    font-size: 23px;
+
+}
+
+/* .nav-wrapper a:hover {
+    color: rgb(255, 255, 255);
+} */
+.fa-solid:hover {
+    animation: fadeIn-icons .8s backwards;
+    color: #cfcfcf
+}
+.fa-brands:hover {
+    animation: fadeIn-icons .8s backwards;
+    color: #cfcfcf;
+}
+.navigation {
+    margin: 0;
+}
+
+.navigation ul {
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+.navigation a {
+    padding: 15px;
+}
+
+.navigation li {
+    justify-items: center;
+    list-style-type: none;
+    display: inline;
+}
+
+.social-icons,
+a {
+    padding: 10px;
+}
+
+.logo .cs-logo {
+    padding: 10px;
+    width: 60px;
+}
+/* @keyframes fadeIn-icons {
+    from {
+        color: #3f3f3f;
+    }
+
+    to {
+        color: #cfcfcf;
+    }
+} */
+
+
+
+
+ /* .sidebar {
+    position: fixed;
+    margin: 0px;
+    text-align: center;
+    background-color: #181818;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 65px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+ /* .sidebar .navigation a {
+    padding: 8px;
+    text-decoration: none;
+    color: #3f3f3f;
+    display: block;
+    font-size: 23px;
+    /* top: 50%; */
+    /* align-items: center; */
+
+
+/* .sidebar .social-icons a {
+    background-color: #3f3f3f;
+    padding: 3px;
+} */
+
+/* .logo {
+    display: block;
+    position: absolute;
+    top: 0%;
+} */
+
+/* #cs-logo {
+    display: flex;
+    width: 50px;
+    margin-top: 20px;
+} */
+
+/* #sparks {
+    display: flex;
+    width: 50px;
+    padding-top: 10px;
+} */
+/* 
+.navigation {
+    padding: 0%;
+    margin-top: auto;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0px 40px 0px;
+}
+
+
+
+a:visited {
+    color: #181818;
+    background-color: transparentnt-area;
+    text-decoration: none;
+}
+
+.fa-github {    
+    margin-top: 10px;
+    border-radius: 9px;
+    width: 16px;
+}
+
+.fa-linkedin {
+    border-radius: 3px;
+    width: 16px;
+} */
+
+/* END OF SIDEBAR---------------------------------*/
+/* -----------------------------------------------*/
+
+
+/* BODY AREA--------------------------------------*/
+/* -----------------------------------------------*/
+.content-area{
+    
+}
+.body-area {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    
+}
+/* .profile-pic{
+    position: static;
+    width: 75%;
+    height: 75%;
+    border-radius: 10px;
+    opacity: 0.2;
+} */
+.profile-pic{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.text{
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}
+.tags-html {
+    font-family: "Comic Sans MS", "Apple Chancery", "Bradley Hand";
+    color: #dad3d3;
+    position: fixed;
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    top: 0;
+    width: 60px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tags-body {
+    font-family: "Comic Sans MS", "Apple Chancery", "Bradley Hand";
+    color: #dad3d3;
+    position: fixed;
+    margin-left: 75px;
+    height: 90%;
+    display: flex;
+    bottom: 40px;
+    width: 60px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    font-family: "Comic Sans MS", "Apple Chancery", "Bradley Hand";
+    color: #dad3d3;
+    font-size: 14px;
+}
+
+.body-area{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    margin: 0;
+    /* margin-left: 300; */
+    font-family: 'Coolvetica';
+}
+.body-area .hello {
+    /* color: #fff; */
+    /* font-size: 40px; */
+    /* line-height: 53px; */
+    /* margin-top: 0; */
+    /* margin-bottom: 40; */
+    
+    /* font-weight: 400; */
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+.body-area h2 {
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+}
+.cliffSparks {
+    display: inline-block;
+}
+
+.cliffSparks,
+.cliff,
+.sparks {
+    display: inline-block;
+}
+
+.C,
+.S {
+    height: 53.33px;
+    animation: fade-in 3s;
+}
+
+button {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 2px solid #1430f6;
+    margin: 15px 10px;
+    float: left;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+
+/* END OF BODY AREA-----------------------------*/
+/* ---------------------------------------------*/
+
+button:hover {
+    background: #1430f6;
+    color: rgb(255, 255, 255);
+}
+
+.fa-solid:hover {
+    animation: fadeIn-icons .8s backwards;
+    color: #9c9b9b
+}
+
+.fa-brands:hover {
+    animation: fadeIn-social .8s backwards;
+    background-color: #9c9b9b;
+}
+
+@keyframes fadeIn-icons {
+    from {
+        color: #3f3f3f;
+    }
+
+    to {
+        color: #9c9b9b;
+    }
+}
+
+@keyframes fadeIn-social {
+    from {
+        background-color: #3f3f3f;
+    }
+
+    to {
+        background-color: #9c9b9b;
+    }
+}
+
+@keyframes fade {
+    from {
+        color: transparent;
+    }
+
+    to {
+        color: #ffffff;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .body-area {
+        /* display: flex; */
+        grid-template-columns: 80%;
+        position: absolute;
+        margin-top: 75px;
+        left: 10%;
+        width: 100%;
+        overflow: auto;
+    }    
+    
+    .sidebar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        min-height: auto;
+    }
+
+    .logo {
+        left: 15px;
+        top: -10px;
+    }
+    .navigation {
+        display: flex;
+        position: absolute;
+    }
+
+    .social-icons {
+        display: flex;
+        width: 100%;
+        /* position: absolute; */
+        flex-direction: row;
+        margin: 0px -10px 0px auto;
+        padding: 0;
+        align-items: center;
+        /* text-align: right; */
+    }
+
+    .fa-brands {
+        position: relative;
+        left: 75%;
+        margin: 10px;
+    }
+
+    .fa-github {
+        margin: 0;
+    }
+    .tags-html, .tags-body, .header{
+        display: none;
+    }
+}
+@media screen and (max-width:900px) {
+    .body-area{
+        
+        width: 100%;
+        margin: 0 auto;
+    }
+    .text{
+    }
+}
+@media screen and (max-width:450px) {
+    
+    .discription{
+        font-size: 20px;
+    }
+    .hello{
+        font-size: 20px;
+    }
+    .cliff, .sparks, .hello{
+        font-size: 20px;
+    }
+    
+}
