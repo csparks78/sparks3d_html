@@ -3,7 +3,6 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 /* START OF SIDEBAR---------------------------------*/
 /* -----------------------------------------------*/
 .nav-wrapper {
@@ -14,6 +13,7 @@ body {
     overflow: hidden;
     background-color: #181818;
     height: 80px;
+    width: 100%;
 }
 
 .nav-wrapper a {
@@ -79,7 +79,14 @@ a {
 
 /* END OF SIDEBAR---------------------------------*/
 /* -----------------------------------------------*/
-
+.picture{
+    width: 90%;
+    border-radius: 15px;
+}
+.picture-area{
+    margin: 40px;
+    width: 50%;
+}
 .body-area h2 {
     color: #8d8d8d;
     margin-top: 20px;
@@ -91,23 +98,28 @@ a {
 }
 
 .body-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
     color: #fff;
     font-size: 20px;
     float: left;
-    margin: 0;
-    /* margin-left: 300; */
     font-family: 'Coolvetica';
+    margin: 0;
 }
 
 .text-zone {
-    margin-top: 100px;
-    margin-left: 50px;
+    /* width: 50%; */
+    margin: 60px 0px 0px 10px;
+    float: left;
+    /* margin-top: 100px;
+    margin-left: 50px; */
 }
 
 .body-area h1 {
-    margin: 0;
+    margin: 0px;
 }
 
 button {
@@ -142,3 +154,30 @@ button:hover {
         background-color: #1430f6;
     }
 }
+
+@media screen and (max-width:1200px) {
+    .body-area{
+        display: flex;
+        position:absolute;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+    }
+    .picture-area{
+        display: flex;
+        width: auto;
+        justify-content: center;
+    }
+    .picture{
+        max-width: 600px;
+        height: auto;
+    }
+    .text-zone{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        align-items: center;
+    }
+}
+/* @media screen and (max-width:800px) { */
