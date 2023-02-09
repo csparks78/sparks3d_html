@@ -4,100 +4,20 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* START OF SIDEBAR---------------------------------*/
-/* -----------------------------------------------*/
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    background-color: #181818;
-    height: 80px;
-    width: 100%;
-}
-
-.nav-wrapper a {
-    color: #454545;
-    /* padding: 14px;    */
-    text-decoration: none;
-    font-size: 23px;
-
-}
-
-/* .nav-wrapper a:hover {
-    color: rgb(255, 255, 255);
-} */
-.fa-solid:hover {
-    animation: fadeIn-icons .8s backwards;
-    color: #cfcfcf
-}
-
-.fa-brands:hover {
-    animation: fadeIn-icons .8s backwards;
-    color: #cfcfcf;
-}
-
-.navigation {
-    margin: 0;
-}
-
-.navigation ul {
-    padding-inline-start: 0;
-    margin: 0;
-}
-
-.navigation a {
-    padding: 15px;
-}
-
-.navigation li {
-    justify-items: center;
-    list-style-type: none;
-    display: inline;
-}
-
-.social-icons,
-a {
-    padding: 10px;
-}
-
-.logo .cs-logo {
-    padding: 10px;
-    width: 60px;
-}
-
-@keyframes fadeIn-icons {
-    from {
-        color: #3f3f3f;
-    }
-
-    to {
-        color: #cfcfcf;
-    }
-}
 
 
-/* END OF SIDEBAR---------------------------------*/
-/* -----------------------------------------------*/
 .picture {
     width: 90%;
     border-radius: 15px;
+    /* -webkit-box-shadow: 11px 14px 15px 5px rgba(0, 0, 0, 0.74); */
+    box-shadow: 11px 14px 15px 5px rgba(0, 0, 0, 0.423);
 }
 
 .picture-area {
+    display: flex;
+    justify-content: center;
     margin: 40px;
     width: 50%;
-}
-
-.body-area h2 {
-    color: #8d8d8d;
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 12px;
-    font-family: sans-serif;
-    letter-spacing: 3px;
-    animation: fadeIn 1s 1.8s backwards;
 }
 
 .body-area {
@@ -110,7 +30,16 @@ a {
     font-size: 20px;
     float: left;
     font-family: 'Coolvetica';
-    margin: 0;
+    margin-top: 80px;
+}
+
+.body-area h2 {
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
 }
 
 .text-zone {
@@ -146,6 +75,10 @@ button:hover {
     animation: fadeInAnimation .5s 0s backwards;
     background: #1430f6;
     color: rgb(255, 255, 255);
+}
+
+.body-area2 {
+    background-color: #cfcfcf;
 }
 
 @keyframes fadeInAnimation {

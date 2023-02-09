@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -10,99 +9,50 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <script src="https://kit.fontawesome.com/ea9594bf4c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu-bar.css">
     <title>Sparks3D</title>
 </head>
 
 <body>
-    <div class="content-area">
-        <div class="nav-wrapper">
+    <div class="navbar">
+        <div class="nav-wrapper" id="navWrapper">
             <!-- Left -->
             <div class="logo">
-                <a href="index.html"><img  class="cs-logo" src="img/CSSparks.png" alt="cs-logo"></a>
+                <a href="index.html"><img class="cs-logo" src="img/CSSparks.png" alt="cs-logo"></a>
             </div>
             <!-- Centered -->
             <nav class="navigation">
                 <ul>
-                    <li class="home"><a class="fa-solid fa-house" href="index2.html"></a></li>
-                    <li class="resume"><a class="fa-solid fa-envelope" href="resume.html"></a></li>
-                    <li class="resume"><a class="fa-solid fa-user" href="resume.html"></a></li>
+                    <li><a class="home" href="index.html">HOME</a></li>
+                    <li><a class="contact" href="contact.html">CONTACT</a></li>
+                    <li><a class="resume" href="resume.html">RESUME</a></li>
                 </ul>
             </nav>
+            
             <!-- Right -->
             <div class="social-icons">
-                <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/cliff-sparks-8231092b/"></a>
-                <a class="fa-brands fa-github" href="https://github.com/csparks78"></a>
-            </div>
+                <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/cliff-sparks-8231092b/"
+                    target="_blank" rel="noopener noreferrer"></a>
+                <a class="fa-brands fa-github" href="https://github.com/csparks78" target="_blank"
+                    rel="noopener noreferrer"></a>
+            </div>            
         </div>
+    </div>
 
-        <!-- <div class="sidebar">
-            <div class="logo">
-                <img id="cs-logo" src="img/logo-cs.png" alt="cs-logo">
-                <img id="sparks" src="img/logo_sub.png" alt="sparks-logo">
-            </div>
-            <div class="navigation">
-                <a href="index.html"><i class="fa-solid fa-house"></i></a>
-                <a href="#clients"><i class="fa-solid fa-user"></i></a>
-                <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-            <div class="social-icons">
-                <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/cliff-sparks-8231092b/"></a>
-                <a class="fa-brands fa-github" href="https://github.com/csparks78"></a>
-            </div>
-             Top Navigation Menu 
-             <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-                <i class="fa fa-bars"></i>
-        </div> -->
-        <!-- <script>
-            function myFunction() {
-                var x = document.getElementById("navigation");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-        </script> -->
-        <!-- End of mobile menu -->
-        <!-- <div class="tags-html">
-            <p id="top">&lt;html&gt;</p>
-            <p id="bottom">&lt;/html&gt;</p>
+    <div class="body-area">
+        <picture class="picture-area">
+            <!-- <div class="picture-area"> -->
+            <img class="picture" src="img/20220626_152530_edited.jpg" alt="Me">
+        </picture>
+
+        <!-- </div> -->
+        <div class="text-zone">
+            <h1>Hello my name is,</h1>
+            <h1>Cliff Sparks</h1>
+            <h2> I recently graduated Colorado Mesa University with a BS in Comuter Science</h2>
+            <button onclick="window.location.href = 'contact.html';">CONTACT ME</button>
+            <button onclick="window.location.href = 'resume.html';">RESUME</button>
         </div>
-        <div class="tags-body">
-            <p id="top">&lt;body&gt;</p>
-            <p id="bottom">&lt;/body&gt;</p>
-        </div> -->
-
-        <!-- <img class="profile-pic" src="img/20220626_152530_edited.jpg" alt="Me"> -->
-        <div class="body-area">
-            <div class="fade text-zone">
-                <!-- <span class="header">&lt;/h1&gt;</span> -->
-
-                <h1 class="hello">Hello, <br /> I'm
-                    <li class="cliffSparks">
-                        <div class="cliff">
-                            <img class="C" src="img/C_logo.png" />
-                            liff
-                        </div>
-                        <div class="sparks">
-                            <img class="S" src="img/S_logo.png" />
-                            parks,
-                        </div>
-                    </li>
-                    <br />
-                    <div class="discription">
-                        an aspiring web developer. <!-- <span class="header">&lt;/h1&gt;</span> -->
-                    </div>
-                </h1>
-                <h2> Recently graduated Computer Science student</h2>
-                <button>CONTACT ME</button>
-                <button onclick="window.location.href = 'resume.html';">RESUME</button>
-            </div>
-        </div>
-            
-       
-
-        </div>
+    </div>
+    
 </body>
-
-</html>

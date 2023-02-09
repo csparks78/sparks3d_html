@@ -9,59 +9,36 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <script src="https://kit.fontawesome.com/ea9594bf4c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu-bar.css">
     <title>Sparks3D</title>
 </head>
 
 <body>
-    <div>
-        <div class="nav-wrapper">
-            <!-- Left -->
-            <div class="logo">
-                <a href="index.html"><img class="cs-logo" src="img/CSSparks.png" alt="cs-logo"></a>
-            </div>
-            <!-- Centered -->
-            <nav class="navigation">
-                <ul>
-                    <li class="home"><a class="fa-solid fa-house" href="index.html"></a></li>
-                    <li class="resume"><a class="fa-solid fa-envelope" href="contact.html"></a></li>
-                    <li class="resume"><a class="fa-solid fa-user" href="resume.html"></a></li>
-                </ul>
-            </nav>
-            <!-- Right -->
-            <div class="social-icons">
-                <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/cliff-sparks-8231092b/"></a>
-                <a class="fa-brands fa-github" href="https://github.com/csparks78"></a>
-            </div>
-        </div>
-        <div class="body-area">
-            <div class="picture-area">
-                <img class="picture" src="img/20220626_152530_edited.jpg" alt="Me">
-            </div>
-            <div class="text-zone">
-                <!-- <span class="header">&lt;/h1&gt;</span> -->
+    <header class="header">
+        <a href="index.html"><img class="cs-logo" src="img/CSSparks.png" alt="cs-logo"></a>
+        <a href="index.html" class="logo">Sparks3D</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a class="home" href="index.html">HOME</a></li>
+            <li><a class="contact" href="contact.html">CONTACT</a></li>
+            <li><a class="resume" href="resume.html">RESUME</a></li>
+        </ul>
+    </header>
 
-                <h1>Hello my name is,</h1>
-                <h1>Cliff Sparks</h1>
-                <h2> I recently graduated Colorado Mesa University with a BS in Comuter Science</h2>
-                <button onclick="window.location.href = 'contact.html';">CONTACT ME</button>
-                <button onclick="window.location.href = 'resume.html';">RESUME</button>
-            </div>
+    <div class="body-area">
+        <picture class="picture-area">
+            <!-- <div class="picture-area"> -->
+            <img class="picture" src="img/20220626_152530_edited.jpg" alt="Me">
+        </picture>
+
+        <!-- </div> -->
+        <div class="text-zone">
+            <h1>Hello my name is,</h1>
+            <h1>Cliff Sparks</h1>
+            <h2> I recently graduated Colorado Mesa University with a BS in Comuter Science</h2>
+            <button onclick="window.location.href = 'contact.html';">CONTACT ME</button>
+            <button onclick="window.location.href = 'resume.html';">RESUME</button>
         </div>
-        <!-- <article>
-        <h2>Title 1</h2>
-        <p>Content 1</p>
-    </article>
-    <article>
-        <h2>Title 2</h2>
-        <p>Content 2</p>
-    </article>
-    <section>A group of related content</section>
-    <aside>Sidebar</aside>
-    <footer>
-        <p>&copy; HTML CheatSheet</p>
-        <address>Contact <a href="mailto:me@htmlg.com">me</a></address>
-    </footer> -->
     </div>
 </body>
-
-</html>

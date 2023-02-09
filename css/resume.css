@@ -5,92 +5,38 @@
     list-style: none;
     font-family: 'Roboto', sans-serif;
 }
-
 body {
-    background-color: #0059B3;
+    background-color: #022c43;
 }
 
-/* START OF SIDEBAR---------------------------------*/
-/* -----------------------------------------------*/
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    background-color: #181818;
-    height: 80px;
-}
-
-.nav-wrapper a {
-    color: #454545;
-    /* padding: 14px;    */
-    text-decoration: none;
-    font-size: 23px;
-
-}
-
-/* .nav-wrapper a:hover {
-    color: rgb(255, 255, 255);
-} */
-.fa-solid:hover {
-    animation: fadeIn-icons .8s backwards;
-    color: #cfcfcf
-}
-
-.fa-brands:hover {
-    animation: fadeIn-icons .8s backwards;
-    color: #cfcfcf;
-}
-
-.navigation {
-    margin: 0;
-}
-
-.navigation ul {
-    padding-inline-start: 0;
-    margin: 0;
-}
-
-.navigation a {
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(234, 234, 234);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
     padding: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 3px;
+    border-radius: 12px;
 }
 
-.navigation li {
-    justify-items: center;
-    list-style-type: none;
-    display: inline;
+#myBtn:hover {
+    background-color: #022c43;
+    color: #D6DBDF;
 }
-
-.social-icons,
-a {
-    padding: 10px;
-}
-
-.logo .cs-logo {
-    padding-left: 5px;
-    width: 65px;
-}
-
-@keyframes fadeIn-icons {
-    from {
-        color: #3f3f3f;
-    }
-
-    to {
-        color: #cfcfcf;
-    }
-}
-
-
-/* END OF SIDEBAR---------------------------------*/
-/* -----------------------------------------------*/
-
 
 .resume-contents {
     min-height: 100vh;
     width: 80%;
-    margin: 2rem auto;
+    margin: 100px auto 2rem auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     border-radius: 10px;
@@ -145,7 +91,6 @@ a {
     padding-bottom: 1rem;
 }
 
-/* .contact-info { border-bottom: 2px solid #1B2631; } */
 .left-title {
     color: #D6DBDF;
     font-size: 20px;
@@ -289,7 +234,7 @@ a {
     padding-left: 5px;
 }
 
-.project-description{
+.project-description {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     border-bottom: 4px solid #878CA4;
@@ -304,9 +249,11 @@ a {
     .resume-contents {
         grid-template-columns: repeat(1, 1fr);
     }
-    .resume-contents .left-section .left-section-contents{
+
+    .resume-contents .left-section .left-section-contents {
         margin-top: 50px;
     }
+
     .left-section {
         border-radius: 15px 15px 0px 0px;
     }
@@ -315,60 +262,13 @@ a {
         border-radius: 0px 0px 15px 15px;
     }
 
-    /* .content-area {
-        display: flex;
-        position: absolute;
-        margin-top: 75px;
-        left: 10px;
-    } */
-
-    /* .sidebar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 70px;
-        min-height: auto;
-    } */
-
-    /* .logo {
-        left: 15px;
-        top: -10px;
-    } */
-
-    /* .navigation {
-        display: flex;
-        position: absolute;
-    }
-
-    .social-icons {
-        display: flex;
-        width: 100%;
-        position: absolute;
-        flex-direction: row;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        text-align: right;
-    } */
-
-    /* .fa-brands {
-        position: relative;
-        left: 80%;
-        margin: 10px;
-    }
-
-    .fa-github {
-        margin: 0;
-    } */
-
     .experience-contents,
     .education-contents,
     .awards-contents,
     .projects-contents {
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .left-section {
         grid-column: span 3;
     }
@@ -379,7 +279,7 @@ a {
 }
 
 @media screen and (max-width:450px) {
-  
+
     .resume-contents {
         width: 100%;
         margin: 0 auto;
@@ -440,7 +340,8 @@ a {
     .projects-name {
         font-size: 18px;
     }
-    .project-description{
+
+    .project-description {
         font-size: 14px;
     }
 }

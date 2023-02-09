@@ -8,9 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="css/index.css"> -->
     <link rel="stylesheet" href="css/resume.css">
-    <title>Sparks3D - Resume</title>
+    <link rel="stylesheet" href="css/menu-bar.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ea9594bf4c.js" crossorigin="anonymous"></script>
@@ -20,41 +19,30 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
+    <title>Sparks3D - Resume</title>
 </head>
 
 <body>
-    <!-- <div class="content-area"> -->
-        <div class="nav-wrapper">
-            <!-- Left -->
-            <div class="logo">
-                <a href="index.html"><img class="cs-logo" src="img/CSSparks.png" alt="cs-logo"></a>
-            </div>
-            <!-- Centered -->
-            <nav class="navigation">
-                <ul>
-                    <li class="home"><a class="fa-solid fa-house" href="index.html"></a></li>
-                    <li class="resume"><a class="fa-solid fa-envelope" href="contact.html"></a></li>
-                    <li class="resume"><a class="fa-solid fa-user" href="resume.html"></a></li>
-                </ul>
-            </nav>
-            <!-- Right -->
-            <div class="social-icons">
-                <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/cliff-sparks-8231092b/"></a>
-                <a class="fa-brands fa-github" href="https://github.com/csparks78"></a>
-            </div>
-        </div>
-        <!-- <script>
-            function myFunction() {
-                var x = document.getElementById("navigation");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-        </script> -->
-        <!-- End of mobile menu -->
-    <!-- </div> -->
+    <header class="header">
+        <!-- <a href="index.html"><img class="cs-logo" src="img/CSSparks.png" alt="cs-logo"></a> -->
+        <a href="index.html" class="logo">Sparks3D</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a class="home" href="index.html">HOME</a></li>
+            <li><a class="contact" href="contact.html">CONTACT</a></li>
+            <li><a class="resume" href="resume.html">RESUME</a></li>
+        </ul>
+    </header>
+    <!-- Right -->
+    <!-- <div class="social-icons">
+                <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/cliff-sparks-8231092b/"
+                    target="_blank" rel="noopener noreferrer"></a>
+                <a class="fa-brands fa-github" href="https://github.com/csparks78" target="_blank"
+                    rel="noopener noreferrer"></a>
+            </div> -->
+
+
     <main class="resume-contents">
         <section class="left-section">
             <div class="left-section-contents">
@@ -120,7 +108,7 @@
                     </ul>
                 </div>
 
-                <div class="references">
+                <!-- <div class="references">
                     <p class="left-title">References</p>
                     <div class="refer">
                         <p class="referance-name">referance-name</p>
@@ -136,7 +124,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -303,7 +291,8 @@
                     <div class="project-description">
                         <p>During my time at CMU some of my professors really like competitive programming. Sometimes
                             they were assignments, but most were just for fun to help me learn the language I was
-                            learning for that semester. At one poin I was trying to get into the top 50 for CMU on https://open.kattis.com/ 
+                            learning for that semester. At one poin I was trying to get into the top 50 for CMU on
+                            https://open.kattis.com/
                             I achieved that goal at one point.
                         </p><br>
                     </div>
@@ -311,8 +300,32 @@
             </div>
         </section>
     </main>
-
-    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
+
+</html>
+
+
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 </html>
