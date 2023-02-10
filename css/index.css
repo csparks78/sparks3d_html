@@ -7,7 +7,7 @@ body {
 
 
 .picture {
-    width: 70%;
+    width: 100%;
     border-radius: 2em;
     /* -webkit-box-shadow: 11px 14px 15px 5px rgba(0, 0, 0, 0.74); */
     box-shadow: 11px 14px 15px 5px rgba(0, 0, 0, 0.423);
@@ -16,14 +16,14 @@ body {
 .picture-area {
     display: flex;
     justify-content: center;
-    margin: 40px;
-    width: 50%;
+    margin-top: 40px;
+    width: 30%;
 }
 
 .body-area {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 100%;
     width: 100%;
     color: #fff;
@@ -108,7 +108,7 @@ button:hover {
     }
 
     .picture {
-        max-width: 600px;
+        max-width: 400px;
         height: auto;
     }
 
@@ -123,5 +123,8 @@ button:hover {
 @media screen and (max-width:400px) {
     .body-area .text-zone h1 {
         font-size: 30px;
+    }
+    .picture-area {
+        padding: 20px;
     }
 }
