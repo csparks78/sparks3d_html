@@ -7,8 +7,8 @@ body {
 
 
 .picture {
-    width: 90%;
-    border-radius: 15px;
+    width: 70%;
+    border-radius: 2em;
     /* -webkit-box-shadow: 11px 14px 15px 5px rgba(0, 0, 0, 0.74); */
     box-shadow: 11px 14px 15px 5px rgba(0, 0, 0, 0.423);
 }
