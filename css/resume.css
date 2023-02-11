@@ -6,9 +6,11 @@
     font-family: 'Roboto', sans-serif;
 }
 body {
-    background-color: #022c43;
+    background-color: var(--background);
 }
-
+.resume-contents{
+    
+}
 #myBtn {
     display: none;
     position: fixed;
@@ -29,7 +31,7 @@ body {
 }
 
 #myBtn:hover {
-    background-color: #022c43;
+    background-color: var(--blue);
     color: #D6DBDF;
 }
 
@@ -39,7 +41,8 @@ body {
     margin: 100px auto 2rem auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    border-radius: 10px;
+    border-style: solid;
+    border-radius: 20px;
 }
 
 .left-section {
@@ -275,6 +278,20 @@ body {
 
     .right-section {
         grid-column: span 4;
+    }
+    .profile {
+        
+        /* display: flex;
+        flex-direction: column;
+        align-content: center; */
+
+        /* width: 400px; */
+    }
+    .profile .profile-image{
+        /* width: 100%; */
+        display: block;
+        margin: auto;
+        width: 50%;
     }
 }
 
