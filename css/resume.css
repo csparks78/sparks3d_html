@@ -8,9 +8,6 @@
 body {
     background-color: var(--background);
 }
-.resume-contents{
-    
-}
 #myBtn {
     display: none;
     position: fixed;
