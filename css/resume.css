@@ -107,13 +107,16 @@ body {
 }
 
 .contact-info ul li,
-.references ul li {
+.references ul li,
+.contact-info ul li a,
+.references ul li a{
     padding: .4rem 0;
     display: flex;
     align-items: center;
     color: #d6dbdfaf;
     letter-spacing: 1px;
     font-size: 13px;
+    /* text-decoration: none; */
 }
 
 .contact-info ul li i,
