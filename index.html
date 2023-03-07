@@ -23,34 +23,39 @@
             <li><a class="home" href="index.html">HOME</a></li>
             <li><a class="contact" href="contact.html">CONTACT</a></li>
             <li><a class="resume" href="resume.html">RESUME</a></li>
-            
         </ul>
     </header>
+    <div class="wrapper">
+        <section class="body-area">
+            <picture class="picture-area">
+                <!-- <div class="picture-area"> -->
+                <img class="picture" src="img/me_new.jpg" alt="Me">
+            </picture>
 
-    <section class="body-area">
-        <picture class="picture-area">
-            <!-- <div class="picture-area"> -->
-            <img class="picture" src="img/me_new.jpg" alt="Me">
-        </picture>
+            <!-- </div> -->
+            <div class="text-zone">
+                <h1>Hello my name is,</h1>
+                <h1>Cliff Sparks</h1>
+                <p> I recently graduated Colorado Mesa University with a BS in Computer Science and a Professional
+                    certificate in Web Application Development. </p>
+                <p>I have a strong knowledge of HTML, CSS, and JavaScript. In my spare time I have been doing
+                    some of the challenges in Frontend Mentor just to test my knowledge and keep active.
+                    I would like to start a career in full stack web development. Websites are the core of any business
+                    and extremely important to keep running efficiently and full of content.</p>
+                <button onclick="window.location.href = 'contact.html';">CONTACT ME</button>
+                <button onclick="window.location.href = 'resume.html';">RESUME</button>
+                <button onclick="NewTab()">FRONTEND MENTOR</button>
+            </div>
+            <script>
+                function NewTab() {
+                    window.open(
+                        "https://csparks78.github.io/frontendDev/", "_blank");
+                }
+            </script>
 
-        <!-- </div> -->
-        <div class="text-zone">
-            <h1>Hello my name is,</h1>
-            <h1>Cliff Sparks</h1>
-            <h2> I recently graduated Colorado Mesa University with a BS in Comuter Science</h2>
-            <button onclick="window.location.href = 'contact.html';">CONTACT ME</button>
-            <button onclick="window.location.href = 'resume.html';">RESUME</button>
-            <button onclick="NewTab()">Frontend Mentor</button>
-        </div>
-        <script>
-            function NewTab() {
-                window.open(
-                "https://csparks78.github.io/frontendDev/", "_blank");
-            }
-        </script>
-    </section>
+        </section>
 
-
+    </div>
 
 </body>
 
